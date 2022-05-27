@@ -23,7 +23,7 @@ load
         local pow = 1
         local c = 0
         while a > 0 or b > 0 do
-            c = c + (XOR_l[(a % 2) + 1][(b % 2) + 1] * pow)
+            c = c + (XOR_l[(a % 2) + 1][(b % 2) ++ 1] * pow)
             a = math.floor(a / 2)
             b = math.floor(b / 2)
             pow = pow * 2
